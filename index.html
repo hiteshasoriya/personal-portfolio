@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/7d289dcb95.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Hitesh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#about">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="/">Contact</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="red">Hitesh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="img/bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <!-- here is about section  -->
+
+        <div class="container" id="about">
+            <div class="image">
+                <img src="img/me.jpg">
+            </div>
+            <div class="about-con">
+                <h1 class="about">About</h1>
+                <p class="text">”I’m a passionate frontend developer with a knack forturning complex problems into
+                    elegant solutions. My expertise in HTML, CSS, and JavaScript, along with my
+                    problem-solving skills, allows me to create seamless digital experiences that engage
+                    and delight users. I’m always eagerto learn and stay up-to-date with the latest trends
+                    and technologies in the ever-evolving world of frontend development.</p>
+
+                <div class="skills-con">
+                    <div class="sub-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('Language')">Languages</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web / App Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MANIPAL UNIVERSITY JAIPUR</span><br>master of computer
+                                Applications<br>expected graduation july 2024</li>
+                            <li><span>JNVU</span><br>Bachelor of Computer Applications<br>2020 | Pali,Rajasthan
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Language">
+                        <ul>
+                            <li><span>Languages i have learned</span><br>C<br>HTML + CSS<br> JavaScript<br>React.js</li>
+                            <li><span>Familiar With:</span><br>Node.js<br>My SQL<br>Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+
+        <!--intrerest  -->
+
+        <div id="my-interest">
+            <div class="int-container">
+                <h1 class="about">My Interest</h1>
+                <div class="interest-list">
+                    <div>
+                        <i class="fa-solid fa-palette" style="color: #aa6bbc;"></i>
+                        <h2>Web Design</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eum, exercitationem veritatis ut totam sed est iste distinctio ullam esse magnam corrupti accusantium officiis nostrum! Nulla possimus hic neque vel!</p>
+                        <a href="#">Learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code fa-spin" style="color: #aa6bbc;"></i>
+                        <h2>Web App Development</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eum, exercitationem veritatis ut totam sed est iste distinctio</p>
+                        <a href="#">Learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-book-open-reader fa-fade" style="color: #aa6be4;"></i>
+                        <h2>Learning</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eum, exercitationem veritatis ut totam sed est iste distinctio ullam esse magnam corrupti accusantium officiis nostrum! Nulla possimus hic neque vel!</p>
+                        <a href="#">Learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-music fa-shake" style="color: #aaaae4;"></i>
+                        <h2>Music</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eum, exercitationem veritatis ut totam sed est iste distinctio ullam esse magnam corrupti accusantium officiis nostrum! Nulla possimus hic neque vel!</p>
+                        <a href="#">Learn more</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- MY work -->
+
+        <div id="projects">
+            <h1 class="about">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="img/work-1.png" alt="">
+                    <div class="layer">
+                        <h3> MOVIES-WORLD</h3>
+                        <p>This application allows users to add their favorite movies, provide ratings and
+                            reviews for movies and see movies collection in one place. I worked as a
+                            Frontend developer designing Userinterface</p>
+                        <a href="https://moviesworld.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #aa6bbc;"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.png" alt="">
+                    <div class="layer">
+                        <h3> Weather-Web-App</h3>
+                        <p>I developed a weather application using React.js. This application provides
+                            users with real-time weather updates for their location, as well as for any
+                            otherlocation they choose.</p>
+                        <a href="https://weather-webapp-zeta.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square" style="color: #aa6bbc;"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>This Portfolio</h3>
+                        <p>This Project itroduce about me.i develop this project in html + CSS and javascriipt.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #aa6bbc;"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="Hitesh Asoriya CV.pdf" download class="btn">Download My CV</a>
+        </div>
+        <hr>
+
+        <!-- Contact Me -->
+
+        <div class="contact_page">
+            <div class="contact-title">Contact Me</div>
+            <p>You Can Follow me on social media</p>
+
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/hitesh.asoriya"><img src="img/icons8-facebook-48.png"></li></a>
+                    <li><a href="https://github.com/hiteshasoriya"><img src="img/icons8-github-48.png"></li></a>
+                    <li><a href="https://www.instagram.com/hitesh_asoriya_/"><img src="img/icons8-instagram-48.png"></li></a>
+                    <li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHQ0XCtvBZp_QAAAYliaQiwIO3q2UzVXsen_4TYtbzSUG6GsYYwNkRDjl1SOEOKxzmhaVuOtKa81mOZ1C5ZI1MQCLN3O4H1pLgqzaNhkVOXRZmjfqZG31Ec_bli7c-3b4GcVlA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fhitesh-asoriya-827771202"><img src="img/icons8-linkedin-circled-48.png"></li></a>
+                </ul>
+            </div>
+            <div class="contact_name">
+                <h2><i class="fa-solid fa-user fa-flip" style="color: #aa6bbc;"></i></i>Hitesh Asoriya</h2>
+                <p><i class="fa-solid fa-envelope" style="color: #aa6bbc;"></i>hiteshasoriya10@gmail.com</p>
+            </div>
+        </div>
+
+
+        <!-- copyrigth -->
+
+        <div class="copyright">
+            <!-- <p>Copright © 2023 Hitesh's Portfolio Created with ❤️ By HItesh Asoriya</p> -->
+            <p>Copright © 2023 Hitesh's Portfolio Created with <i class="fa-solid fa-heart fa-bounce" style="color: #d40c0c;"></i> By HItesh Asoriya</p>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer',"Web Designer","Web Developer"],
+            typeSpeed: 35,
+        });
+
+        // onclick
+
+        var tablinks = document.getElementsByClassName("tab-link")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+</body>
+
+</html>
